@@ -10,6 +10,19 @@ class bcolors:
 	FAIL = '\033[91m'
 	RESET = '\033[0m'
 
+def banner():
+        print(bcolors.WARNING+'''
+  ____  ___   ____  ___         __                          
+ / / / / _ \ |_  / / _ ) __ __ / /_ ___  ___  ___ _ ___  ___
+/_  _// // /_/_ < / _  |/ // // __// -_)/ _ \/ _ `/(_-< (_-<
+ /_/  \___//____//____/ \_, / \__/ \__// .__/\_,_//___//___/
+                       /___/          /_/                   
+               .--.
+              |.-. '----------.
+              |'-' .--"--""--"/
+               '--'
+        '''+bcolors.RESET)
+
 
 
 def curl_fct(options,test):
@@ -115,5 +128,5 @@ def main():
 		print(e)
 	except KeyboardInterrupt:
 		print(bcolors.FAIL+"[!]"+bcolors.RESET+"Key Interruption: Coming back home")
-
+banner()
 main()
