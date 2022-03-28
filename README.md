@@ -16,7 +16,7 @@ python3 403bytepass.py
 
 usage:
 
-python3 403bytepass.py <target>
+python3 403bytepass.py "target"
 
 Exemple:
  
