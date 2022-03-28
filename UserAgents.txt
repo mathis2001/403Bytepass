@@ -2450,5 +2450,5 @@ ZoomSpider - wrensoft.com
 Zscho.de Crawler/Nutch-1.0-Zscho.de-semantic_patch (Zscho.de Crawler
 zspider/0.9-dev http://feedback.redkolibri.com/
 ZyBorg/1.0 (ZyBorg@WISEnut.com; http://www.WISEnut.com)
-Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)
+Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1) 
 Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729) (Prevx 3.0.5)
