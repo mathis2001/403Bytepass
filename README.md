@@ -24,7 +24,7 @@ python3 403bytepass.py http://target.xxx
  
 or
  
-python3 403bytepass.py http://target.xxx/
+python3 403bytepass.py http://target.xxx/XXX
  
 or
  
@@ -32,7 +32,7 @@ python3 403bytepass.py https://target.xxx
  
 or
  
-python3 403bytepass.py https://target.xxx/ 
+python3 403bytepass.py https://target.xxx/XXX
 
 ![tempsnip](https://user-images.githubusercontent.com/40497633/160359511-3c80c4ab-6eb7-45e4-9833-6a0b19c5a929.png)
  
