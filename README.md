@@ -14,7 +14,7 @@ python3 403bytepass.py
 ![image](https://user-images.githubusercontent.com/40497633/160373432-f9b141e3-5a1a-4344-a691-0b1055bf1c7a.png)
 
 
-usage:
+Usage:
 
 python3 403bytepass.py "target"
 
