@@ -62,7 +62,7 @@ def main():
 	
 	if not target.startswith("http"):  #On vérifie si l'url de la cible commence bien par http ou https
 		print(bcolors.FAIL+"[!]"+bcolors.RESET+"URL must start with http:// or https://")  #On affiche un message d'erreur et un message d'utilisation
-		print(bcolors.INFO+"[*]"+bcolors.RESET+"Usage: 403python3 bytepass.py <target>")
+		print(bcolors.INFO+"[*]"+bcolors.RESET+"Usage: python3 403bytepass.py <target>")
 		sys.exit(1)
 
 	SlashCheck = target.count("/")  #On vérifie le nombre de slash utilisé dans l'url
