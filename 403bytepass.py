@@ -33,7 +33,7 @@ def curl_fct(options,test):
 	try:
 		code = command.strip().split(" ")[1]  #Récupere le code de status
 	except:
-		print(bcolors.FAIL+"[!]"+bcolors.RESET+"No status code")  #Si aucun code n'est trouvé on affiche un code d'erreur
+		print(bcolors.FAIL+"[!]"+bcolors.RESET+"No status code found")  #Si aucun code n'est trouvé on affiche un code d'erreur
 		return
 
 	if code == "200":  #Si le code est un code 200
@@ -68,14 +68,15 @@ def main():
 	SlashCheck = target.count("/")  #On vérifie le nombre de slash utilisé dans l'url
 	if target.endswith("/"):  #Si l'url fini par un slash
 		SlashCheck = SlashCheck-1 #On enleve un slash au compteur pour la suite
-		print("Target selected: "+target)
+		print("Target selected: "+target) #On affiche la cible entrée
 
 	else:  #Sinon
 		print(target+"/") #On ajoute le slash qui manque
-
+		print("Target selected: "+target) #On affiche la cible entrée
+		
 	if SlashCheck == 2:  #Si on a bien 2 slash dans l'url correspondant au http://
 		uri = ""
-	else:  #Sinon, gestion de l'uri
+	else:  #Sinon, c'est qu'on a entré un ou plusieurs répertoires et/ou un fichier à bypass qu'on va donc isoler dans une variable uri 
 		content = target.split("/")
 		target = "/".join(content[:SlashCheck])
 		uri = content[SlashCheck]
@@ -120,9 +121,10 @@ def main():
 		####################Fin des tests (VERB TAMPERING)#######################
 		
 		
-		####################Fin des tests (HEADER)###############################
+		
 		print(bcolors.OK+"[+]"+bcolors.RESET+"Try bypass with"+bcolors.OK+" HEADER"+bcolors.RESET)
 		print("\n")
+		####################Début des tests (HEADER)###############################
 		print("HEADER -> Referer : ",curl_fct(" -X GET -H \"Referer: "+test+"\"",test))
 		print("HEADER -> X-Custom-IP-Authorization: ",curl_fct(" -X GET -H \"X-Custom-IP-Authorization: 127.0.0.1\"",test))
 		test=target+"/"+uri+"..\;"
@@ -140,9 +142,10 @@ def main():
 		print("\n")
 		####################Fin des tests (HEADER)###############################
 		
-		####################Début des tests (Tips)###############################
+		
 		print(bcolors.OK+"[+]"+bcolors.RESET+"Try bypass with"+bcolors.OK+" Bug Bounty Tricks"+bcolors.RESET)
 		print("\n")
+		####################Début des tests (Tips)###############################
 		test=target+"/%2e/"+uri
 		print("Response with /%2e/ between: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"/."
@@ -173,8 +176,9 @@ def main():
 		print("\n")
 		####################Fin des tests (Tips)###############################
 		
-		####################Début des tests (User Agent)#######################
+		
 		print(bcolors.OK+"[+]"+bcolors.RESET+"Try bypass with"+bcolors.OK+" Custom User Agent"+bcolors.RESET)
+		####################Début des tests (User Agent)#######################
 		test=target+"/"+uri
 
 		with open("UserAgents.txt") as f:
