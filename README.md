@@ -20,20 +20,19 @@ python3 403bytepass.py "target"
 
 Exemple:
  
-python3 403bytepass.py http://target.com
+python3 403bytepass.py http://target.xxx
  
 or
  
-python3 403bytepass.py http://target.com/
+python3 403bytepass.py http://target.xxx/
  
 or
  
-python3 403bytepass.py https://target.com
+python3 403bytepass.py https://target.xxx
  
 or
  
-python3 403bytepass.py https://target.com/
-
+python3 403bytepass.py https://target.xxx/ 
 
 ![tempsnip](https://user-images.githubusercontent.com/40497633/160359511-3c80c4ab-6eb7-45e4-9833-6a0b19c5a929.png)
  
