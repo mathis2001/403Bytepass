@@ -13,10 +13,10 @@ $ git clone https://github.com/mathis2001/403Bytepass.git
 Check installation:
 
 $ cd 403Bytepass
-
-python3 403bytepass.py
+$ python3 403bytepass.py
 
 or
+ 
 $ chmod u+x 403bytepass.py
 $ ./403bytepass.py
 
@@ -30,19 +30,19 @@ $ ./403bytepass.py "target"
 
 Exemples:
  
-python3 403bytepass.py http://target.xxx
+$ python3 403bytepass.py http://target.xxx
 
 or
  
-python3 403bytepass.py http://target.xxx/XXX
+$ python3 403bytepass.py http://target.xxx/XXX
  
 or
  
-python3 403bytepass.py https://target.xxx
+$ python3 403bytepass.py https://target.xxx
  
 or
  
-python3 403bytepass.py https://target.xxx/XXX
+$ python3 403bytepass.py https://target.xxx/XXX
 
 ![tempsnip](https://user-images.githubusercontent.com/40497633/160359511-3c80c4ab-6eb7-45e4-9833-6a0b19c5a929.png)
  
@@ -53,5 +53,5 @@ python3 403bytepass.py https://target.xxx/XXX
 ![image](https://user-images.githubusercontent.com/40497633/160359133-d68b3068-c478-4c60-a117-98afdfa3ee2e.png)
 
 Wanted improvement:
-- grep Location header when redirecting
+- grep Location header when redirecting (You can use curl -k -s -I -L "option" "target" to follow redirection)
 - add args parser to make it more user friendly !
