@@ -10,7 +10,8 @@ Check installation:
 cd 403Bytepass
 python3 403bytepass.py
 
-![image](https://user-images.githubusercontent.com/40497633/160357047-4f1c3fa2-3266-4dc3-8b82-27b7f474629b.png)
+![image](https://user-images.githubusercontent.com/40497633/160373432-f9b141e3-5a1a-4344-a691-0b1055bf1c7a.png)
+
 
 usage:
 
