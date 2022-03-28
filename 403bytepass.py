@@ -76,9 +76,9 @@ def main():
 	if SlashCheck == 2:  #Si on a bien 2 slash dans l'url correspondant au http://
 		uri = ""
 	else:  #Sinon
-		print(bcolors.FAIL+"[!]"+bcolors.RESET+"URL must start with http:// or https://")  #On affiche un message d'erreur et un message d'utilisation
-		print(bcolors.INFO+"[*]"+bcolors.RESET+"Usage: python3 403bytepass.py <target>")
-		sys.exit(1)  #On sort du script
+		aux = target.split("/")
+		target = "/".join(aux[:SlashCheck])
+		uri = aux[SlashCheck]
 	try:
 		start=time.time() #début du chronomètre à un temps t=0s
 		print("\n")
