@@ -1,6 +1,6 @@
 # 403Bytepass
 
-Python tool for forbidden urls bypass
+Python tool for forbidden urls bypassing
 
 install:
 
