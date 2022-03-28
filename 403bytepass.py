@@ -28,7 +28,7 @@ def banner():
 
 def curl_fct(options,test):
 	command = popen("curl -k -s -I %s %s | grep HTTP | tail -1" % (options, test)).read()  #Commande par défaut
-	# -k = connexion sans la sécurité SSL acceptée
+	# -k = autorise curl à établir des connexions non sécurisées
 	# -s = mode muet (curl n'affiche rien d'autre que la réponse)
 	# -I = Affiche seulement le header
 
