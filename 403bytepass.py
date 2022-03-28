@@ -76,9 +76,9 @@ def main():
 	if SlashCheck == 2:  #Si on a bien 2 slash dans l'url correspondant au http://
 		uri = ""
 	else:  #Sinon, gestion de l'uri
-		aux = target.split("/")
-		target = "/".join(aux[:SlashCheck])
-		uri = aux[SlashCheck]
+		content = target.split("/")
+		target = "/".join(content[:SlashCheck])
+		uri = content[SlashCheck]
 	try:
 		start=time.time() #début du chronomètre à un temps t=0s
 		print("\n")
