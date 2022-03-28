@@ -191,7 +191,7 @@ def main():
 		print(e)  # On affiche l'erreur
 	except KeyboardInterrupt:  #Si il y a une interruption clavier
 		print(bcolors.FAIL+"[!]"+bcolors.RESET+"Key Interruption: Coming back home")  #On affiche un message d'interruption clavier
-
+		print(bcolors.OK+"[+]"+bcolors.RESET+"Testing time:", Time)  #Affichage du temps de tests
 try:
 	banner()  #affichage bannière
 	main()  #lancement du script
