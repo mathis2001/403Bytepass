@@ -51,3 +51,7 @@ python3 403bytepass.py https://target.xxx/XXX
 ![image](https://user-images.githubusercontent.com/40497633/160359035-ea029ded-25c6-4630-b19c-af61edb9619d.png)
 
 ![image](https://user-images.githubusercontent.com/40497633/160359133-d68b3068-c478-4c60-a117-98afdfa3ee2e.png)
+
+Wanted improvement:
+- grep Location header when redirecting
+- add args parser to make it more user friendly !
