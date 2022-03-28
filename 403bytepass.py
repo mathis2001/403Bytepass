@@ -34,7 +34,7 @@ def curl_fct(options,test):
 		code = command.strip().split(" ")[1]  #Récupere le code de status
 	except:
 		print(bcolors.FAIL+"[!]"+bcolors.RESET+"No status code")  #Si aucun code n'est trouvé on affiche un code d'erreur
-		sys.exit(1)
+		return
 
 	if code == "200":  #Si le code est un code 200
 		command = bcolors.OK+command+bcolors.RESET #On affiche la réponse en vert
@@ -164,6 +164,10 @@ def main():
 		print("Response with /.;/ between: ",curl_fct(" -X GET --path-as-is",test))
 		test=target+"\;foo=bar/"+uri
 		print("Response  with ;foo=bar;/ between: ",curl_fct(" -X GET --path-as-is",test))
+		test=target+"/%20"+uri+"%20/"
+		print("Response with %20 between: ",curl_fct(" -X GET --path-as-is",test))
+		test=target+uri+"%20/"
+		print("Response ending with %20/:",curl_fct(" -X GET",test))
 		stop=time.time()
 		Time=stop-start #Arret du chronomètre
 		print("\n")
