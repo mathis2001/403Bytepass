@@ -1,27 +1,37 @@
 # 403Bytepass
 Python tool for forbidden urls bypassing
 
+Prerequisite:
+
+- python3
+- curl
+
 install:
 
-git clone https://github.com/mathis2001/403Bytepass.git
+$ git clone https://github.com/mathis2001/403Bytepass.git
 
 Check installation:
 
-cd 403Bytepass
+$ cd 403Bytepass
 
 python3 403bytepass.py
+
+or
+$ chmod u+x 403bytepass.py
+$ ./403bytepass.py
 
 ![image](https://user-images.githubusercontent.com/40497633/160373432-f9b141e3-5a1a-4344-a691-0b1055bf1c7a.png)
 
 
 Usage:
 
-python3 403bytepass.py "target"
+$ python3 403bytepass.py "target"
+$ ./403bytepass.py "target"
 
-Exemple:
+Exemples:
  
 python3 403bytepass.py http://target.xxx
- 
+
 or
  
 python3 403bytepass.py http://target.xxx/XXX
