@@ -27,7 +27,8 @@ python3 403bytepass.py https://target.com
 or
 python3 403bytepass.py https://target.com/
 
-  
+![tempsnip](https://user-images.githubusercontent.com/40497633/160359511-3c80c4ab-6eb7-45e4-9833-6a0b19c5a929.png)
+ 
 ![image](https://user-images.githubusercontent.com/40497633/160358945-dec9b05d-6573-477d-8856-283a69b4d4d1.png)
 
 ![image](https://user-images.githubusercontent.com/40497633/160359035-ea029ded-25c6-4630-b19c-af61edb9619d.png)
