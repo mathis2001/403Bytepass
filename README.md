@@ -1,7 +1,7 @@
 # 403Bytepass
 Python tool for forbidden urls bypassing
 
-Prerequisite:
+Prerequisites:
 
 - python3
 - curl
