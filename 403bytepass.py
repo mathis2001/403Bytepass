@@ -145,7 +145,7 @@ def main():
 		####################Fin des tests (HEADER)###############################
 		
 		
-		print(bcolors.OK+"[+]"+bcolors.RESET+"Try bypass with"+bcolors.OK+" Bug Bounty Tricks"+bcolors.RESET)
+		print(bcolors.OK+"[+]"+bcolors.RESET+"Try bypass with"+bcolors.OK+" Bug Bounty Tips"+bcolors.RESET)
 		print("\n")
 		####################Début des tests (Tips)###############################
 		test=target+"/"+uri+"/*"
@@ -255,4 +255,4 @@ try:
 	banner()  #affichage bannière
 	main()  #lancement du script
 except Exception as e:  #Si erreur
-	print(e) #affichage erreur
+	print(e) #affichage erreur 
