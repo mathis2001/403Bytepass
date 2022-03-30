@@ -44,7 +44,7 @@ def curl_fct(options,test):
 	elif code.startswith("30"):  #Si le code est un code 30X
 		command = bcolors.WARNING+command+bcolors.RESET  #On affiche la réponse en orange
 	
-	elif code.startswith("40") or status.starwith("50"):  #Si le code est un code 40X ou 50X
+	elif code.startswith("40") or code.startswith("50"):  #Si le code est un code 40X ou 50X
 		command = bcolors.FAIL+command+bcolors.RESET  #On affiche la réponse en rouge
 	return command
 
