@@ -73,8 +73,7 @@ def main():
 		print("Target selected: "+target) #On affiche la cible entrée
 
 	else:  #Sinon
-		print(target+"/") #On ajoute le slash qui manque
-		print("Target selected: "+target) #On affiche la cible entrée
+		print("Target selected: "+target+"/") #On affiche la cible entrée
 		
 	if SlashCheck == 2:  #Si on a bien 2 slash dans l'url correspondant au http://
 		uri = ""
