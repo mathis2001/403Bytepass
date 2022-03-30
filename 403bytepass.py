@@ -187,7 +187,9 @@ def main():
 		test=target+"/"+uri+"%23"
 		print("Response ending with %23: ",curl_fct(" -X GET",test))
 		test=target+"/"+uri+".json"
-		print("Response trying to open in json file: ",curl_fct(" -X GET",test))
+		print("Response trying to open with .json file extension: ",curl_fct(" -X GET",test))
+		test=target+"/"+uri+".xml"
+		print("Response trying to open with .xml file extension: ",curl_fct(" -X GET",test))
 		test=target+"/*"+uri
 		print("Response with /* between: ",curl_fct(" -X GET",test))
 		test=target+"./."+uri
