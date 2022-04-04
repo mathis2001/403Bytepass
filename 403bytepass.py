@@ -228,7 +228,7 @@ def main():
 		test=target+uri+"%20/"
 		print("Response ending with %20/:",curl_fct(" -X GET",test))
 		test=target+".%00./"+uri
-                print("Response trying waf null byte bypass .%00. between:",curl_fct(" -X GET",test))
+		print("Response trying waf null byte bypass .%00. between:",curl_fct(" -X GET",test))
                 stop=time.time()
 		Time=stop-start
 		print("\n")
